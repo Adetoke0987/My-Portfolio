@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   width: 90vw;
+   height: 200px;
+   align-items: center;
+   margin-left: 5%;
+}
+#menu{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+
+    width: 80vw;
+    height: 75vh;
+    margin-left: 5%;
+}
+#about p{
+    max-width: 60%;
+    font-size: 24px;
+}
+#about h3{
+    font-size: 30px;
+}
+#my-name{
+    font-size: 74px;
+}
+.social{
+    margin-left: 5%;
+    display: flex;
+    gap: 30px;
+}
+#myvideo{
+    text-align: center;
+    margin-top: 150px;
+}
+#myvideo video{
+    margin-top: 30px;
+    width: 70vw;
+}
+#whatdo{
+    width: 90vw;
+    height: 70vh;
+    text-align: center;
+    margin-top: 240px;
+
+}
+#dodo{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    width: 80vw;
+    margin-left: auto;
+    gap: 40px;
+    
+    
+}
+.inner{
+   border: 1px solid;
+   width: 300px;
+   height: 320px;
+   background-color: black;
+   
+}
+.inner1{
+    border: 1px solid;
+    width: 300px;
+    height: 320px;
+    background-color: grey;
+    
+}
+ .inner2{
+    border: 1px solid;
+    width: 300px;
+    height: 320px;
+    background-color: grey;
+    
+}
+ #port{
+    text-align: center;
+}
+ #pp{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+ #jobrole{
+    display: inline;
+}
+ #imggrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+}
+#testimonial{
+    margin-top: 20%;
+}
+ .bloop{
+    text-align: center;
+    margin-top: 50px;
+}
+ #test{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    width: 90vw;
+}
+ #name{
+    margin-top: 50px;
+    text-align: justify;
+}
+#ref{
+    max-width: 10%;
+}
+.refloop{
+    width: 30%;
+}
+
+ 
