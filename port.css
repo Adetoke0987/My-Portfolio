@@ -3,19 +3,22 @@
     margin: 0;
 }
 body{
-    
+    background-color: white;
 }
-
+#hero{
+    height: 120vh;
+}
 .navbar{
    display: flex;
    justify-content: space-between;
-   width: 90vw;
-   height: 200px;
    align-items: center;
-   margin-left: 5%;
+   padding-left: 3%;
+   padding-right: 4%;
+   padding-top: 0;
 }
+
 #menu{
-    display: flex;
+    display: none;
     gap: 10px;
     list-style: none;
 }
@@ -35,23 +38,41 @@ body{
     margin-left: 5%;
 }
 #about p{
-    max-width: 60%;
-    font-size: 24px;
+    max-width: 80%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#about #p2{
+    max-width: 80%;
+    font-size: 14px;
+}
+.horizontal-rule {
+    display: inline-block;
+    width: 35px; 
+    height: 1px;
+    background-color: black; 
+    margin-left: 15px; 
+    margin-bottom: 10px;
 }
 #about h3{
     font-size: 30px;
+    font-family: "Ubuntu", sans-serif;
 }
 #my-name{
-    font-size: 74px;
+    font-size: 54px;
 }
-.social{
+.soc{
     margin-left: 5%;
     display: flex;
     gap: 30px;
 }
+.soc i{
+    color: black;
+}
 #myvideo{
     text-align: center;
     margin-top: 150px;
+    height: 90vh;
 }
 #myvideo video{
     margin-top: 30px;
@@ -62,7 +83,11 @@ body{
     height: 70vh;
     text-align: center;
     margin-top: 240px;
-
+}
+#whatdo h1{
+    color: black;
+    text-align: center;
+    font-size: 20px;
 }
 #dodo{
     display: flex;
@@ -70,30 +95,54 @@ body{
     margin-top: 2%;
     width: 80vw;
     margin-left: auto;
-    gap: 40px;
-    
-    
+    gap: 40px;  
 }
 .inner{
-   border: 1px solid;
-   width: 300px;
-   height: 320px;
-   background-color: black;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    width: 300px;
+    height: 320px;
+    background-color: black;
+    color: white;
+}
+.inner h3,
+.inner1 h3,
+.inner2 h3{
+    font-size: 40px;
+    text-align: left;
+    padding: 7%;
+}
+.inner a,
+.inner1 a,
+.inner2 a{
+    padding-top: 15px;
+    color: white;
+    text-decoration: none;
 }
 .inner1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 1px solid;
     width: 300px;
     height: 320px;
-    background-color: grey;
-    
+    background-color: black;
+    color: white;    
 }
  .inner2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 1px solid;
     width: 300px;
     height: 320px;
-    background-color: grey;
-    
+    background-color: black;
+    color: white;
 }
  #port{
     text-align: center;
@@ -131,10 +180,255 @@ body{
     text-align: justify;
 }
 #ref{
-    max-width: 10%;
+    max-width: 100%;
+    text-align: justify;
 }
 .refloop{
     width: 30%;
 }
+.refloop #left{
+   margin-right: 300px;
+}
+.refloop #right{
+    margin-left: 300px;
+ }
+#content {
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.836);
+    text-align: center;
+    position: relative;
+}
 
- 
+#hello {
+    color: gainsboro;
+    position: absolute;
+    font-size: 450px; 
+    font-weight: 400;
+    z-index: -1;
+    margin-left: 8%;
+    font-family: "Rubik", sans-serif;
+}
+
+#get {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; 
+    color: white;
+    padding-top: 80px;
+    font-family: "Rubik", sans-serif;
+}
+#get p{
+    font-family: "Rubik", sans-serif;
+    font-size: 26;
+    font-weight: 100;
+}
+#get h3{
+    margin-top: 15px;
+    font-size: 26px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 100;
+}
+.social a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+}
+.social{
+    margin-top: 90px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 80px;
+}
+.proj {
+    height: 60vh;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+#project {
+    color: gainsboro;
+    position: absolute;
+    font-size: 200px; 
+    font-weight: 400;
+    z-index: -1;
+    margin-left: 23%;
+    font-family: "Rubik", sans-serif;
+}
+#flexproject{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 100px;
+}
+#flexproject p{
+    font-size: 10px;
+    font-family: "Rubik", sans-serif;
+}
+#flexproject h1{
+    font-size: 50px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+.skills{
+    text-align: center;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: 2%;
+}
+#skill{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+#state{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 85%;
+    margin-left: 6%;
+    margin-bottom: 40%;
+    
+}
+#snall{
+    height: 30vh;
+    width: 15%;
+    margin: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#state p{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Rubik", sans-serif;
+}
+#state i.fab {
+    font-size: 8em;
+}
+
+.job{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+.Experience{
+    color: black;
+    text-align: center;
+    height: 90vh;
+}
+.jobgrid{
+    display: grid;
+    column-gap: 50px;
+    row-gap: 30px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin-left: 5.5%;
+}
+.allexp{
+    height: auto;
+    width: 60%;
+    margin: 5vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 5%;
+}
+.allexp p {
+    font-size: 15px;
+}
+.hire{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+    
+}
+#ccword h1{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+#cword p{
+    max-width: 500px;
+}
+.cicon{
+    color: black;
+    margin-top: 70px;
+}
+.cicon p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.cicon a{
+    text-decoration: none;
+    color: black;
+}
+.cicon i{
+    margin-right: 10px;
+}
+.contact{
+    margin-top: 10%;
+    height: 40vh;
+}
+.formme {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: black;
+    padding: 20px;
+}
+
+.formme form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formme input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0;
+}
+
+.formme button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    align-self: flex-end;
+    margin-top: 0;
+}
+.formme button:hover {
+    background-color: #0056b3;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+footer p{
+    font-size: 10px;
+}
+footer .vicon{
+    display: flex;
+    gap: 30px;
+}
