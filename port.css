@@ -144,24 +144,39 @@ body{
     background-color: black;
     color: white;
 }
+#role h1{
+    margin-bottom: 25px;
+}
  #port{
     text-align: center;
 }
- #pp{
-    display: flex;
-    justify-content: center;
-    gap: 80px;
+#portfolio {
+    list-style: none;
+    display: flex; 
+    justify-content: center; 
 }
+
+#portfolio li {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+
+ 
  #jobrole{
     display: inline;
 }
  #imggrid{
     display: grid;
-    grid-template-columns: auto auto auto;
+    background-color: aquamarine;
     gap: 50px;
-    justify-content: center;
-    margin-top: 30px;
-}
+    
+ }
 #testimonial{
     margin-top: 20%;
 }
