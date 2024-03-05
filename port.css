@@ -122,6 +122,12 @@ body{
     color: white;
     text-decoration: none;
 }
+.inner p,
+.inner1 p,
+.inner2 p{
+    text-align: justify;
+    padding: 15px;
+}   
 .inner1{
     display: flex;
     flex-direction: column;
@@ -171,14 +177,19 @@ body{
  #jobrole{
     display: inline;
 }
- #imggrid{
+#imggrid {
     display: grid;
-    background-color: aquamarine;
-    gap: 50px;
-    
- }
+    grid-template-columns: 6fr 6fr 6fr;
+    grid-template-rows: 9fr 9fr 9fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    padding-top: 50px;
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item5 item6";
+}
 #testimonial{
-    margin-top: 20%;
+    margin-top: 10%;
 }
  .bloop{
     text-align: center;
