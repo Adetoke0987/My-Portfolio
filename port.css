@@ -1,3 +1,5 @@
+
+
 *{
     padding: 0;
     margin: 0;
@@ -5,6 +7,8 @@
 body{
     background-color: white;
 }
+
+
 
 header {
     background-color: black;
@@ -98,6 +102,7 @@ header {
 .navbar a:hover {
     background-color: #555;
 }
+
 
 @media screen and (max-width: 768px) {
     .toggle-btn {
@@ -295,17 +300,84 @@ header {
  #jobrole{
     display: inline;
 }
-#imggrid {
+
+
+#slag{
     display: grid;
-    grid-template-columns: 6fr 6fr 6fr;
-    grid-template-rows: 9fr 9fr 9fr;
-    row-gap: 15px;
-    column-gap: 15px;
-    padding-top: 50px;
-    grid-template-areas:
-        "item1 item2 item3"
-        "item4 item5 item6";
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    height: 80vh;
+    width: 70vw;
 }
+#grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    background-color: aqua;
+    margin: 10px;  
+}
+
+#grid:nth-child(8n+1),
+#grid:nth-child(8n+3),
+#grid:nth-child(8n+6){
+    grid-row: span 2;
+}
+
+#grid:nth-child(8n+2),
+#grid:nth-child(8n+4),
+#grid:nth-child(8n+5){
+    grid-row: span 3;
+}
+
+
+
+
+
+
+
+
+#lag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#imggrid {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: center; */
+    height: 70vh;
+    width: 70vw;
+    border: 1px solid black;
+}
+
+.portfolio-wrap{
+    margin: 10px;
+    width: 250px;
+    background-color: beige;
+}
+.item1{
+   height: 200px; 
+}
+.item2{
+    height: 200px;
+}
+.item3{
+    height: 200px;
+}
+.item4{
+    height: 200px; 
+ }
+ .item5{
+     height: 200px;
+ }
+ .item6{
+     height: 200px;
+ }
+
 #testimonial{
     margin-top: 10%;
 }
