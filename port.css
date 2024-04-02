@@ -3,11 +3,14 @@
 *{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 body{
     background-color: white;
 }
-
+.fa, .fas, .fab{
+    overflow: hidden;
+}
 
 
 header {
@@ -16,14 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2.5%;
-    padding-right: 5%;
-    padding-top: 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     margin: 0;
     height: 10vh;
+    overflow: hidden;
 }
 
 #logo {
@@ -75,7 +76,7 @@ header {
     overflow-x: hidden;
 
     clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path:circle(1000px at 90% -10%);
+    -webkit-clip-path:circle(100% at 90% -10%);
     /* transition: all 1s ease-in-out; */
     
     /* visibility: visible; */
@@ -88,7 +89,7 @@ header {
     visibility: visible;
     opacity: 1;
     clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(700px at 90% -10%);
+    -webkit-clip-path: circle(70% at 90% -10%);
 }
 .navbar a {
     padding: 15px;
@@ -149,17 +150,17 @@ header {
 }
 }
 
+
 #about{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-family: "Rubik", sans-serif;
-
-    width: 80vw;
+    width: 90vw;
     height: 75vh;
     margin-left: 5%;
-}
+}   
 #about p{
     max-width: 80%;
     font-size: 20px;
@@ -177,20 +178,35 @@ header {
     margin-left: 15px; 
     margin-bottom: 10px;
 }
+#AB{
+    overflow: hidden;
+}
 #about h3{
     font-size: 30px;
     font-family: "Ubuntu", sans-serif;
+}
+#age{
+    overflow: hidden;
+    width: 400px;
+    height:400px;
+}
+
+#age img{
+    width: 100%;
+    height: 100%;
 }
 #my-name{
     font-size: 54px;
 }
 .soc{
     margin-left: 5%;
+    margin-bottom: 4%;
     display: flex;
     gap: 30px;
 }
 .soc i{
     color: black;
+    font-size: 2em;
 }
 #myvideo{
     text-align: center;
@@ -202,10 +218,10 @@ header {
     width: 70vw;
 }
 #whatdo{
-    width: 90vw;
+    width: 100vw;
     height: 70vh;
+    margin-top: 4em;
     text-align: center;
-    margin-top: 240px;
 }
 #whatdo h1{
     color: black;
@@ -216,8 +232,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 2%;
-    width: 80vw;
-    margin-left: auto;
+    width: 100vw;
     gap: 40px;  
 }
 .inner{
@@ -421,7 +436,12 @@ header {
     font-size: 450px; 
     font-weight: 400;
     z-index: -1;
-    margin-left: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    width: 100vw;
     font-family: "Rubik", sans-serif;
 }
 
@@ -477,7 +497,11 @@ button {
     font-size: 200px; 
     font-weight: 400;
     z-index: -1;
-    margin-left: 23%;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
     font-family: "Rubik", sans-serif;
 }
 #flexproject{
