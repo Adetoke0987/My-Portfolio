@@ -7,6 +7,7 @@
 }
 body{
     background-color: white;
+    font-family: "Rubik", sans-serif;
 }
 .fa, .fas, .fab{
     overflow: hidden;
@@ -166,6 +167,7 @@ header {
     font-size: 20px;
     margin-top: 10px;
     text-align: justify;
+    
 }
 #about #p2{
     max-width: 80%;
@@ -240,15 +242,24 @@ header {
         font-size: 16px; /* Adjust font size for smaller screens */
     }
 
-    #soc {
-        flex-direction: column; /* Stack social icons vertically */
+    #about #p2 {
+        font-size: 12px; /* Further reduce font size for smaller screens */
+    }
+
+
+    .soc {
+        display: flex;
+        flex-direction: row; /* Stack social icons vertically */
         align-items: center; /* Center align social icons */
+        text-align: center;
+        margin-left: 25%;
+        margin-top: 5%;
     }
 }
 #myvideo{
     text-align: center;
-    margin-top: 150px;
-    height: 90vh;
+    margin-top: 15%;
+    /* height: 90vh; */
     overflow: hidden;
 }
 #myvideo video{
@@ -258,9 +269,10 @@ header {
 }
 #whatdo{
     width: 100vw;
-    height: 70vh;
-    margin-top: 4em;
+    /* height: 100vh; */
+    margin-top: 15%;
     text-align: center;
+    overflow: hidden;
 }
 #whatdo h1{
     color: black;
@@ -327,6 +339,54 @@ header {
     background-color: black;
     color: white;
 }
+
+@media (max-width: 768px) {
+    #whatdo {
+        margin-top: 10%;
+    }
+
+    #dodo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .inner,
+    .inner1,
+    .inner2 {
+        width: 80%;
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+    #whatdo {
+        margin-top: 5%;
+    }
+
+    .inner,
+    .inner1,
+    .inner2 {
+        width: 90%;
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px;
+        text-align: center; /* Center align text within inner divs */
+    }
+
+    .inner h3,
+    .inner1 h3,
+    .inner2 h3 {
+        font-size: 32px;
+        padding: 5%;
+    }
+
+    .inner p,
+    .inner1 p,
+    .inner2 p {
+        padding: 10px;
+    }
+}
+
+
 #role h1{
     margin-bottom: 25px;
 }
