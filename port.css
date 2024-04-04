@@ -165,10 +165,12 @@ header {
     max-width: 80%;
     font-size: 20px;
     margin-top: 10px;
+    text-align: justify;
 }
 #about #p2{
     max-width: 80%;
     font-size: 14px;
+    text-align: justify;
 }
 .horizontal-rule {
     display: inline-block;
@@ -184,6 +186,7 @@ header {
 #about h3{
     font-size: 30px;
     font-family: "Ubuntu", sans-serif;
+    text-align: justify;
 }
 #age{
     overflow: hidden;
@@ -208,14 +211,50 @@ header {
     color: black;
     font-size: 2em;
 }
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #AB {
+        text-align: center; /* Center align content */
+    }
+
+    #age {
+        width: 100%; /* Adjust width to full width */
+        height: auto; /* Allow height to adjust */
+    }
+}
+
+@media (max-width: 480px) {
+    #about h3 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    #my-name {
+        font-size: 42px; /* Reduce font size for smaller screens */
+    }
+
+    #about p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    #soc {
+        flex-direction: column; /* Stack social icons vertically */
+        align-items: center; /* Center align social icons */
+    }
+}
 #myvideo{
     text-align: center;
     margin-top: 150px;
     height: 90vh;
+    overflow: hidden;
 }
 #myvideo video{
     margin-top: 30px;
     width: 70vw;
+    overflow: hidden;
 }
 #whatdo{
     width: 100vw;
