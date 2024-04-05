@@ -1,6 +1,6 @@
 gsap.set("#tftoke", { perspective: 400 });
 
-gsap.from(".horizontal-rule, img,.soc, #p2, #stag, #my-name, #tftoke, #third, #part1, .hii> i", {
+gsap.from(".horizontal-rule, .mainimg,.soc, #p2, #stag, #my-name, #tftoke, #third, #part1, .hii> i", {
   duration: 8,
   opacity: 0,
   scale: 0,
