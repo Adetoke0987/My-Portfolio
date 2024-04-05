@@ -548,7 +548,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 70px;
-    width: 90vw;
+    width: 110vw;
+    margin-bottom: 30px;
 }
  #name{
     margin-top: 50px;
@@ -648,7 +649,9 @@ header {
 }
 .social{
     margin-top: 90px;
-    
+}
+.social i{
+    overflow: hidden;
 }
 
 button {
