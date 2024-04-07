@@ -6,7 +6,7 @@
     overflow-x: hidden;
 }
 body{
-    background-color: white;
+    background-color: #EEEEEE;
     font-family: "Rubik", sans-serif;
 }
 .fa, .fas, .fab{
@@ -116,6 +116,7 @@ header {
         right: 5%;
         top: 50%;
         transform: translate(-7%, -80%);
+        margin-top: 20%;
     }
 .menu{
     display: block;
@@ -185,6 +186,7 @@ header {
 }
 #AB{
     overflow: hidden;
+    
 }
 #about h3{
     font-size: 30px;
@@ -214,10 +216,15 @@ header {
     color: black;
     font-size: 2em;
 }
+.soc .fa-brands {
+    font-size: 2em;
+    overflow: hidden;
+}
 @media (max-width: 768px) {
     #about {
         flex-direction: column;
         height: auto;
+        margin-top: 30%;
     }
 
     #AB {
@@ -577,9 +584,14 @@ header {
     .refloop {
         width: 90%;
         text-align: center;
-        margin-left: 15%;
-        margin-bottom: 10%;
-        
+        /* margin-left: 10%; */
+        margin-bottom: 10%; 
+    }
+    #ref{
+        padding: 30px;
+    }
+    #name{
+        text-align: center;
     }
 
     .refloop #left,
@@ -748,11 +760,37 @@ button:hover {
     font-weight: 400;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .proj {
+        height: 70vh;
+    }
+    #project {
+        font-size: 100px; /* Decrease font size for smaller screens */
+    }
+
+    #flexproject {
+        flex-direction: column; /* Change to vertical layout on smaller screens */
+        padding-top: 50px;
+        margin-top: -40px;
+        margin-bottom: 70px;
+        gap: 30px;
+    }
+
+    #flexproject h1 {
+        font-size: 40px; /* Decrease heading font size for smaller screens */
+    }
+
+    #flexproject p {
+        font-size: 12px; /* Decrease description font size for smaller screens */
+    }
+}
+
 .skills{
     text-align: center;
-    height: 90vh;
+    /* height: 90vh; */
     overflow: hidden;
-    margin-top: 3%;
+    
 }
 #skill{
     color: black;
@@ -763,14 +801,14 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    /* height: 50vh; */
     width: 85%;
     margin-left: 6%;
     margin-bottom: 40%;
     
 }
 #snall{
-    height: 30vh;
+    /* height: 30vh; */
     width: 15%;
     margin: 20px;
     border: 1px solid black;
@@ -787,26 +825,24 @@ button:hover {
 #state i.fab {
     font-size: 8em;
 }
+
+/* Media Query for Responsive Design */
 @media (max-width: 768px) {
-    #project {
-        font-size: 100px; /* Decrease font size for smaller screens */
+    #state {
+        flex-direction: column; /* Switch to vertical layout on smaller screens */
+        overflow: hidden;
     }
 
-    #flexproject {
-        flex-direction: column; /* Change to vertical layout on smaller screens */
-        padding-top: 50px;
+    /* Additional adjustments for smaller screens */
+    #snall {
+        width: 40%; /* Each item takes full width in column layout */
+        /* height: 150%; */
+        margin-bottom: 20px; /* Add spacing between vertical items */
+        overflow: hidden;
     }
-
-    #flexproject h1 {
-        font-size: 40px; /* Decrease heading font size for smaller screens */
-    }
-
-    #flexproject p {
-        font-size: 12px; /* Decrease description font size for smaller screens */
-    }
-
     #state #snall {
         flex: 1 0 45%; /* Adjusted flex properties for smaller screens */
+        
     }
 
     #state p {
@@ -814,9 +850,10 @@ button:hover {
     }
 
     #state i.fab {
-        font-size: 3em; /* Decrease skill icon font size for smaller screens */
+        font-size: 3; /* Decrease skill icon font size for smaller screens */
     }
 }
+
 
 
 
@@ -852,6 +889,10 @@ button:hover {
 .allexp p {
     font-size: 15px;
 }
+
+#ccword{
+    margin-top: -20%;
+}
 .hire{
     display: flex;
     margin-left: 150px;
@@ -865,6 +906,8 @@ button:hover {
 }
 #cword p{
     max-width: 500px;
+    text-align: justify;
+    padding: 5px;
 }
 .cicon{
     color: black;
@@ -921,9 +964,34 @@ button:hover {
 .formme button:hover {
     background-color: #0056b3;
 }
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    #ccword {
+        margin-top: -10%; /* Adjust the top margin for smaller screens */
+    }
+
+    .hire {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+        align-items: center; /* Center-align items */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 30px; /* Adjust top margin */
+    }
+
+    .cicon {
+        margin-top: 30px; /* Adjust spacing for contact icons */
+    }
+
+    .formme {
+        margin: 30px auto; /* Center the form horizontally */
+    }
+}
+
+
 footer{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center-align items */    
     padding: 30px;
 }
 footer p{
@@ -931,5 +999,22 @@ footer p{
 }
 footer .vicon{
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.vicon .fa-brands{
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Change to column layout on smaller screens */
+        align-items: center; /* Center-align items */
+        padding: 20px; /* Reduce padding */
+    }
+
+    footer .vicon {
+        margin-top: 20px; /* Increase top margin for social icons */
+        gap: 10px; /* Reduce gap between social icons */
+    }
 }
