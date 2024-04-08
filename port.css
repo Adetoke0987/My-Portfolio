@@ -998,6 +998,7 @@ footer{
     flex-direction: column; /* Change to column layout on smaller screens */
     align-items: center; /* Center-align items */    
     padding: 30px;
+    color: black;
 }
 footer p{
     font-size: 10px;
@@ -1007,9 +1008,13 @@ footer .vicon{
     gap: 20px;
     overflow: hidden;
     margin-top: 10px;
+    color: black;
 }
 .vicon .fa-brands{
     overflow: hidden;
+}
+.vicon a{
+    color: black;
 }
 @media (max-width: 768px) {
     footer {
