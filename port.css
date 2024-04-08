@@ -6,7 +6,7 @@
     overflow-x: hidden;
 }
 body{
-    background-color: #EEEEEE;
+    background-color: #f4eeee;
     font-family: "Rubik", sans-serif;
 }
 .fa, .fas, .fab{
@@ -192,6 +192,7 @@ header {
     font-size: 30px;
     font-family: "Ubuntu", sans-serif;
     text-align: justify;
+    
 }
 #age{
     overflow: hidden;
@@ -205,6 +206,9 @@ header {
 }
 #my-name{
     font-size: 54px;
+    color: red;
+    font-family:"Ubuntu", sans-serif;
+    font-weight: 900;
 }
 .soc{
     margin-left: 5%;
