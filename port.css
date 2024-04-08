@@ -809,6 +809,7 @@ button:hover {
     width: 85%;
     margin-left: 6%;
     margin-bottom: 40%;
+    overflow: hidden;
     
 }
 #snall{
