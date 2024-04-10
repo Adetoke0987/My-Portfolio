@@ -181,7 +181,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
+// JavaScript function to toggle dark mode
+function toggleMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
 
+  // Toggle icon between toggle-off and toggle-on
+  const modeToggleBtn = document.querySelector('.mode-toggle-btn');
+  if (body.classList.contains('dark-mode')) {
+      modeToggleBtn.classList.remove('fa-toggle-off');
+      modeToggleBtn.classList.add('fa-toggle-on');
+  } else {
+      modeToggleBtn.classList.remove('fa-toggle-on');
+      modeToggleBtn.classList.add('fa-toggle-off');
+  }
+}
 
 
 function toggleMenu() {
