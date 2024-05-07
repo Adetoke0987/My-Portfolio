@@ -37,6 +37,20 @@ function toggleMenu() {
 }
 
 
+//form field
+function composeEmail() {
+  const form = document.getElementById('myForm');
+  const formData = new FormData(form);
+  const { name, email, budget, description } = Object.fromEntries(formData);
+
+  const subject = 'New Project Inquiry';
+  const message = `Name: ${name}\nEmail: ${email}\nBudget: ${budget}\nDescription: ${description}`;
+
+  const mailToLink = `mailto:adetokedurojaiye@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+  // Open the default email client with pre-filled email content
+  window.location.href = mailToLink;
+}
 
 
 
