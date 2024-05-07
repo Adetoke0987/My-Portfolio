@@ -5,7 +5,7 @@
     margin: 0;
     overflow-x: hidden;
 }
-body{
+body {
     background-color: #f4eeee;
     font-family: "Rubik", sans-serif;
     /* color: grey; */
@@ -14,26 +14,43 @@ body{
 body.dark-mode {
     background-color: #222;
     color: #fff;
-    .soc i{
+
+    .soc i {
         color: white;
         font-size: 2em;
     }
+
     .horizontal-rule {
         display: inline-block;
-        width: 35px; 
+        width: 35px;
         height: 1px;
-        background-color: white; 
-        margin-left: 15px; 
+        background-color: white;
+        margin-left: 15px;
         margin-bottom: 10px;
     }
-    .vicon a{
+
+    .vicon a {
         color: white;
     }
-    #flexproject{
-       color: grey;
+
+    #flexproject {
+        color: grey;
     }
 
+    .cicon p i a{
+        color: white;
     
+    }
+
+    .cicon{
+        color: white;
+    }
+
+    .cicon a{
+        text-decoration: none;
+        color: white;
+    }
+
 }
 
 /* Icon styles */
