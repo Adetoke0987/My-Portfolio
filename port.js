@@ -38,7 +38,7 @@ function toggleMenu() {
 
 
 //form field
-function submitForm() {
+function composeEmail() {
   const form = document.getElementById('myForm');
   const formData = new FormData(form);
   const { name, email, budget, description } = Object.fromEntries(formData);
@@ -46,12 +46,12 @@ function submitForm() {
   const subject = 'New Project Inquiry';
   const message = `Name: ${name}\nEmail: ${email}\nBudget: ${budget}\nDescription: ${description}`;
 
-  const mailToLink = `mailto:your_email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  const mailToLink = `mailto:adetokedurojaiye@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
   // Open the default email client with pre-filled email content
   window.location.href = mailToLink;
 
-  // Reset the form after submission
+  //to reset
   form.reset();
 }
 
