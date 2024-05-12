@@ -13,6 +13,11 @@
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EasePack.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="./js/SplitText.min.js" defer></script>
+
 
     <link rel="stylesheet" href="./port.css">
     <script src="https://kit.fontawesome.com/30a15e789e.js" crossorigin="anonymous"></script>
@@ -25,13 +30,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-
-
-
-
-
-
-
 
     <script src="port.js" defer></script>
 
@@ -50,7 +48,7 @@
                 <ul class="menu">
                     <li><i class="mode-toggle-btn fa-solid fa-toggle-off" onclick="toggleMode()"></i></li>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#ABB">About</a></li>
+                    <li><a href="./about.html">About</a></li>
                     <li><a href="#port">Portfolio</a></li>
                     <li><a href="./assest/adetokeDurojaiyee.pdf">Resume</a></li>
                     <li><a href="https://medium.com/@awesometokeh">Blog</a></li>
@@ -63,7 +61,7 @@
                 <h3><span class="horizontal-rule"></span> <span id="stag">Hello</span></h3>
                 <h1 id="my-name"><span style="font-weight: 50; font-family: Rubik, sans-serif; color: black;">I'm</span>
                     Adetoke Durojaiye</h1>
-                <h3 id="rolecontainer"></h3>
+                <h3 id="rolecontainer">Software Developer</h3>
                 <p id="tftoke">A results-oriented and driven individual with a proven
                     track record in software development, having successfully
                     implemented responsive web designs using HTML, CSS, and JavaScript.
@@ -132,7 +130,7 @@
         </div>
         <div id="lag">
             <div id="slag">
-                <div id="grid">
+                <div id="grid" class="grid1">
                     <img onclick="toggleProjectInfo(1)" class="Pimg" src="./assest/RPS game.png" alt="">
                     <div id="projectInfoContainer1" class="project-info">
                         <p id="projectDescription1">
@@ -143,17 +141,18 @@
                                 <a id="readMoreLink" href="https://syntax-project.vercel.app">View Demo</a>
                             </button>
                             <button>
-                                <a id="gitRepoLink" href="https://github.com/Landlord209/-Syntax-Project.git">Git Repo</a>
+                                <a id="gitRepoLink" href="https://github.com/Landlord209/-Syntax-Project.git">Git
+                                    Repo</a>
                             </button>
                         </div>
                     </div>
                 </div>
-               
-                <div id="grid">
+
+                <div id="grid" class="grid2">
                     <img onclick="toggleProjectInfo(2)" class="Pimg" src="./assest//todify.png" alt="">
                     <div id="projectInfoContainer2" class="project-info">
                         <p id="projectDescription2">
-                            A minimalist Task Manager Web App with an efficient interface, 
+                            A minimalist Task Manager Web App with an efficient interface,
                             built using TypeScript for streamlined task organization.
                         </p>
                         <div class="pbtn">
@@ -166,8 +165,8 @@
                         </div>
                     </div>
                 </div>
-                
-                <div id="grid">
+
+                <div id="grid" class="grid3">
                     <img onclick="toggleProjectInfo(3)" class="Pimg" src="./assest/qjpg.jpg" width="280px" alt="">
                     <div id="projectInfoContainer3" class="project-info">
                         <p id="projectDescription3">
@@ -184,11 +183,12 @@
                     </div>
                 </div>
 
-                <div id="grid">
+                <div id="grid" class="grid6">
                     <img onclick="toggleProjectInfo(6)" class="Pimg" src="./assest/rest.png" width="480px" alt="">
                     <div id="projectInfoContainer6" class="project-info">
                         <p id="projectDescription6">
-                            Developed a RESTful API (questionsapi-1) to provide quiz-related data access via HTTP requests. 
+                            Developed a RESTful API (questionsapi-1) to provide quiz-related data access via HTTP
+                            requests.
                             Adhered to REST principles for standardized resource handling and stateless communication.
                         </p>
                         <div class="pbtn">
@@ -201,12 +201,14 @@
                         </div>
                     </div>
                 </div>
-                
-                <div id="grid">
-                    <img onclick="toggleProjectInfo(4)" class="Pimg" src="./assest/download.jpeg" width="279px" height="280px" alt="">
+
+                <div id="grid" class="grid4">
+                    <img onclick="toggleProjectInfo(4)" class="Pimg" src="./assest/download.jpeg" width="279px"
+                        height="280px" alt="">
                     <div id="projectInfoContainer4" class="project-info">
                         <p id="projectDescription4">
-                            Time Explorer is a user-friendly web application that provides real-time information about the current day of the week, day of the year, and current time.
+                            Time Explorer is a user-friendly web application that provides real-time information about
+                            the current day of the week, day of the year, and current time.
                         </p>
                         <div class="pbtn">
                             <button>
@@ -218,9 +220,10 @@
                         </div>
                     </div>
                 </div>
-               
-                <div id="grid">
-                    <img onclick="toggleProjectInfo(5)" class="Pimg" src="./assest/reactproject.png" width="280px" height="500px" alt="">
+
+                <div id="grid" class="grid5">
+                    <img onclick="toggleProjectInfo(5)" class="Pimg" src="./assest/reactproject.png" width="280px"
+                        height="500px" alt="">
                     <div id="projectInfoContainer5" class="project-info">
                         <p id="projectDescription5">
                             ReactShop: An e-commerce application built with React.
@@ -236,37 +239,19 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
 
         <div id="testimonial">
             <div class="bloop">
                 <h1>Client testimonial</h1>
-                <div id="test">
-                    <div>
-                        <img src="./assest/yk.jpg" alt="" width="190px" style="margin-top: 30px;">
-                    </div>
-                    <div class="refloop">
-                        <i class="fa fa-4x fa-quote-left" id="left"></i>
-                        <p id="ref">
-                            Adetoke is a highly dedicated and enthusiastic Software Engineer.
-                            In our collaboration, I witnessed her exceptional problem-solving skills and strong
-                            attention to detail.
-                            Adetoke approaches challenges with a positive attitude, always eager to learn and improve.
-                            Her commitment
-                            to delivering high-quality code and her collaborative nature make her a valuable asset to
-                            any software development team. I have no doubt that Adetoke will continue to excel in her
-                            career as a Software Engineer.
-                        </p>
-                        <i class="fa fa-4x fa-quote-right" id="right"></i>
-                        <div id="name">
-                            <h1>Olatunji Yusuf</h1>
-                            <h4>Business Developer</h4>
-                        </div>
+                <div id="testimonialContainer">
+                    <div class="testimonial">
+                        <div id="testimonialsContainer"></div>
+
                     </div>
                 </div>
-            </div>
         </div>
         <div id="content">
             <div id="hello">
@@ -275,7 +260,7 @@
             <div id="get">
                 <div>
                     <p>Get in touch</p>
-                    <h3>Just say hello!</h3> 
+                    <h3>Just say hello!</h3>
                     <button type="button">
                         <a href="#mr" style="text-decoration: none;">Contact</a>
                     </button>
@@ -426,12 +411,12 @@
                     </div>
                 </div>
                 <div class="formme" id="mr">
-                    <form id="myForm" method="post" >
+                    <form id="myForm" method="post">
                         <input type="text" name="name" placeholder="Your name">
                         <input type="email" name="email" required placeholder="Your email address">
                         <input type="number" name="budget" placeholder="Your budget (Optional)">
                         <input type="text" name="description" placeholder="Your project description">
-                        <button type="button" onclick="composeEmail()" >SEND</button>
+                        <button type="button" onclick="composeEmail()">SEND</button>
                     </form>
                 </div>
             </div>
