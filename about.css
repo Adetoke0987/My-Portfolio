@@ -1,32 +1,39 @@
-*{
-    
+* {
+
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Rubik", sans-serif;
-    
+
 }
 
-body.dark-mode{
+body.dark-mode {
     background-color: #222;
     color: #fff;
-    #cv{
+
+    #cv {
         color: #fff;
     }
-    #flak{
+
+    #flak {
         background-color: #222;
     }
-    #grid1, #grid2, #grid3{
+
+    #grid1,
+    #grid2,
+    #grid3 {
         background-color: white;
         color: black;
     }
-    footer{
+
+    footer {
         background-color: #222;
         color: white;
     }
-    footer a{
+
+    footer a {
         color: white;
     }
 }
@@ -76,53 +83,12 @@ header {
     padding: 15px;
     text-align: center;
 }
+
 .menu a {
     text-decoration: none;
     color: white;
     display: block;
 }
-
-/* .navbar {
-    display: none;
-    flex-direction: column;
-    background-color: #444;
-    padding: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-    transition: opacity 0.5s ease-in-out 1s;
-    overflow-x: hidden;
-
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path:circle(100% at 90% -10%);
-    /* transition: all 1s ease-in-out; */
-    
-    /* visibility: visible; */
-    /* opacity: 1; */
-
-
-
-/* .navbar.open {
-    visibility: visible;
-    opacity: 1;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(70% at 90% -10%);
-} 
-.navbar a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    display: block;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #555;
-} */
 
 
 @media screen and (max-width: 768px) {
@@ -136,68 +102,72 @@ header {
         transform: translate(-7%, -80%);
         margin-top: 20%;
     }
-.menu{
-    display: block;
-}
-.navbar {
-    display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #444;
-    padding: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden; 
 
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path:circle(700px at 90% -10%);
-    transition: all 1s ease-in-out;
-}
-.navbar.open {
-    visibility: visible;
-    opacity: 1;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(70% at 90% -10%);
-} 
-.navbar a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    display: block;
-    transition: 0.3s;
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #444;
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(700px at 90% -10%);
+        transition: all 1s ease-in-out;
+    }
+
+    .navbar.open {
+        visibility: visible;
+        opacity: 1;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(70% at 90% -10%);
+    }
+
+    .navbar a {
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .navbar a:hover {
+        background-color: #555;
+    }
 }
 
-.navbar a:hover {
-    background-color: #555;
-}
-}
 
-
-.left{
+.left {
     display: flex;
     margin: 10px 20px;
     color: white;
 }
 
 
-#logo{
+#logo {
     width: 60px;
     cursor: pointer;
-    
+
 }
 
-#menu{
+#menu {
     display: none;
 }
 
 
 
-.right{
+.right {
     display: flex;
     font-family: cursive;
     font-size: 16px;
@@ -205,14 +175,14 @@ header {
 }
 
 
-#im{
+#im {
     width: 400px;
     padding-right: 20px;
     border-radius: 120px;
     image-orientation: flip;
 }
 
-.aaa{
+.aaa {
     padding: 20px;
     cursor: pointer;
     margin: 0px 20px;
@@ -222,12 +192,12 @@ header {
 }
 
 
-.aaa:hover{
+.aaa:hover {
     border-bottom: 2px solid lightblue;
 }
 
 
-.aaa:active{
+.aaa:active {
     border-bottom: 2px solid lightblue;
     background-color: rgb(0, 0, 138)
 }
@@ -235,7 +205,7 @@ header {
 
 
 
-.aboutme{
+.aboutme {
     height: 90vh;
     display: flex;
     flex-direction: row;
@@ -249,11 +219,13 @@ header {
     text-align: center;
     font-family: arial;
 }
-.note{
+
+.note {
     text-align: justify;
     margin-top: 10px;
 }
-.side3{
+
+.side3 {
     color: grey;
     display: flex;
     justify-content: center;
@@ -261,28 +233,30 @@ header {
     flex-direction: column;
     padding: 20px;
     margin-left: 70px;
-    font-size:18px;
+    font-size: 18px;
     width: 700px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#aa{
+
+#aa {
     margin: 10px;
     font-size: 20px;
     color: gray;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#smag2{
+
+#smag2 {
     width: 300px;
 }
 
-#aa1{
+#aa1 {
     width: 100%;
     text-align: center;
     height: 4vh;
-    margin-top: 60px;
+    margin-top: 75px;
 }
 
-#cv{
+#cv {
     margin-top: 40px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -290,109 +264,183 @@ header {
     text-decoration: none;
     color: black;
 }
-  
-#cv:hover, #cv:visited, #cv:active{
+
+#cv:hover,
+#cv:visited,
+#cv:active {
     background: linear-gradient(to right, pink, grey);
 }
-.side4{
+
+.side4 {
     width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-right: 90px;
-    
-}
-#flak{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
+
 }
 
-#tp{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 900;
-    font-family: cursive;
-    margin-top: 30px;
-}
-#grid1, #grid2, #grid3{
-    width: 400px;
-    text-align: justify;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 30px;
-}
-#tit{
-    text-align: center;
-    font-size: 27px;
-    font-family: cursive;
+@media screen and (max-width: 768px) {
+    .note {
+        text-align: justify;
+        font-size: smaller;
+        max-width: 350px;
+        margin-right: 10%;
+        padding: 10px;
+    }
+    .side3 {
+        max-width: 500px;
+        margin-left: -70px;
+        
+    }
+
+    .aboutme {
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .what {
+        margin-right: 10%;
+    }
+
+    #cv {
+        margin-right: 10%;
+    }
 }
 
-#type{
-    width: 70wh;
-    height: 70vh;
-    padding-top: 40px;
-}
-#grid2{
-    margin-left: 400px;
-}
-p{
-    text-align: center;
-}
 
-#title2{
-    font-size: 18px;
-}
-#title{
-    font-size: 18px;
-}
+    #flak {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+    }
 
-footer{
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: white;
-    letter-spacing: 2px;
-}
+    #tp {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        font-family: cursive;
+        margin-top: 30px;
+    }
 
-footer{
-    display: flex;
-    flex-direction: column; /* Change to column layout on smaller screens */
-    align-items: center; /* Center-align items */    
-    padding: 30px;
-    
-}
-footer p{
-    font-size: 10px;
-}
-footer .vicon{
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
-    margin-top: 10px;
-    color: black;
-}
-.vicon .fa-brands{
-    overflow: hidden;
-}
-.vicon a{
-    color: black;
-}
-@media (max-width: 768px) {
+    #grid1,
+    #grid2,
+    #grid3 {
+        width: 400px;
+        text-align: justify;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 30px;
+    }
+
+    #tit {
+        text-align: center;
+        font-size: 27px;
+        font-family: cursive;
+    }
+
+    #type {
+        width: 70wh;
+        height: 70vh;
+        padding-top: 40px;
+    }
+
+    #grid2 {
+        margin-left: 400px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px){
+        #type {
+            width: auto;
+            height: auto;
+        }
+
+        #grid2{
+            margin-left: 20px;
+            width: auto;
+        }
+
+        #grid1{
+            margin-left: 20px;
+            width: auto;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #title2 {
+        font-size: 18px;
+    }
+
+    #title {
+        font-size: 18px;
+    }
+
+
+
     footer {
-        flex-direction: column; /* Change to column layout on smaller screens */
-        align-items: center; /* Center-align items */
-        padding: 20px; /* Reduce padding */
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: white;
+        letter-spacing: 2px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* Change to column layout on smaller screens */
+        align-items: center;
+        /* Center-align items */
+        padding: 30px;
+
+    }
+
+    footer p {
+        font-size: 10px;
     }
 
     footer .vicon {
-        margin-top: 20px; /* Increase top margin for social icons */
-        gap: 10px; /* Reduce gap between social icons */
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+        margin-top: 10px;
+        color: black;
     }
-}
+
+    .vicon .fa-brands {
+        overflow: hidden;
+    }
+
+    .vicon a {
+        color: black;
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            flex-direction: column;
+            /* Change to column layout on smaller screens */
+            align-items: center;
+            /* Center-align items */
+            padding: 20px;
+            /* Reduce padding */
+        }
+
+        footer .vicon {
+            margin-top: 20px;
+            /* Increase top margin for social icons */
+            gap: 10px;
+            /* Reduce gap between social icons */
+        }
+    }
