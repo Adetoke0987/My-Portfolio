@@ -821,27 +821,30 @@ button:hover {
         font-size: 14px; /* Decrease button font size for smaller screens */
         margin-top: 20px; /* Adjust button top margin for smaller screens */
     }
+    #get{
+        margin-top: 100px;
+    }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     #hello {
-        font-size: 150px; /* Further decrease font size for very small screens */
+        font-size: 150px; 
     }
 
     #get p,
     #get h3 {
-        font-size: 16px; /* Further decrease text size for very small screens */
+        font-size: 16px; 
     }
 
     .social a {
-        font-size: 16px; /* Further decrease social icon size for very small screens */
+        font-size: 16px; 
     }
 
     button {
-        font-size: 12px; /* Further decrease button font size for very small screens */
-        margin-top: 10px; /* Adjust button top margin for very small screens */
+        font-size: 12px; 
+        margin-top: 10px; 
     }
-}
+} */
 
 .proj {
     height: 60vh;
