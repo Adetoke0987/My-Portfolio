@@ -101,7 +101,9 @@ header {
         right: 5%;
         top: 50%;
         transform: translate(-7%, -80%);
-        margin-top: 20%;
+        margin-top: 10%;
+        padding: auto;
+        padding-right: 10px;
     }
 
     .menu {
@@ -320,6 +322,9 @@ header {
     }
     #aa1{
         margin-top: 30%;
+    }
+    #logo{
+        width: 100%;
     }
 }
 
