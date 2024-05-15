@@ -185,17 +185,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 // Animate the project portfolio container onto the screen from the right
-gsap.from("#slag", {
-  x: "100%",
-  opacity: 0,
-  duration: 1,
-  scrollTrigger: {
-    trigger: "#slag",
-    start: "top center", 
-    end: "center center",
-    scrub: 1
-  }
-});
+// gsap.from("#slag", {
+//   x: "100%",
+//   opacity: 0,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: "#slag",
+//     start: "top center", 
+//     end: "center center",
+//     scrub: 1
+//   }
+// });
    
 
 
